@@ -926,7 +926,7 @@ static int tx_fifo_send_bytes()
     }
     repeatOnErrorCount = 0;
     nbReadableBytes -= length;
-    usleep(1500); //KAUD
+    usleep(1500);
   }
   return EXIT_SUCCESS;
 }

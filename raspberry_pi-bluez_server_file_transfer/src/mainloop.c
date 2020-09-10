@@ -114,17 +114,14 @@ int mainloop_run(void)
 	{
 		struct epoll_event events[MAX_EPOLL_EVENTS];
 		int n, nfds;
-		//printf("before epoll_wait\n"); //KAUD
 		nfds = epoll_wait(epoll_fd, events, MAX_EPOLL_EVENTS, -1);
-		//printf("after epoll_wait\n"); //KAUD
 
-		usleep(100); //KAUD
+		usleep(100);
 		if (nfds < 0)
 			continue;
 
 		for (n = 0; n < nfds; n++)
 		{
-			//printf("nfds = %d", nfds); //KAUD
 			struct mainloop_data *data = events[n].data.ptr;
 
 			data->callback(data->fd, events[n].events,

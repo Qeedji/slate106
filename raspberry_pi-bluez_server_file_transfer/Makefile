@@ -11,7 +11,7 @@ endif
 INCLUDE_DIR	:= -Isrc/ -Iinc/ -Iinc/libcrc32/ -Iinc/libe_kermit/ -Iinc/libfile_transfer/ -I$(BLUEZ_DIR)/ -I$(BLUEZ_DIR)/src/shared/  -I$(BLUEZ_DIR)/lib/ -I$(BLUEZ_DIR)/src/ 
 
 CC=gcc
-EXEC=bluez_file_transfer
+EXEC=bin/bluez_server_file_transfer
 LDFLAGS	= $(LIB) -lbluetooth -lpthread
 
 all:$(EXEC)

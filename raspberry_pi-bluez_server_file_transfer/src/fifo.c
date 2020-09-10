@@ -101,7 +101,7 @@ int fifo_get(fifo *p_fifo, uint8_t *p_byte)
   }
   else
   {
-    usleep(250); // KAUD
+    usleep(250);
     return FIFO_EMPTY;
   }
 }

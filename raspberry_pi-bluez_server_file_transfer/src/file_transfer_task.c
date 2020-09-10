@@ -45,9 +45,9 @@ void *ft_task(void *arg)
   uint32_t err_code;
   unsigned char err = 0;
 
-  const char *root_path = "img/";
+  const char *file_transfer_path = "img/";
 
-  err_code = (uint32_t)FT_init(ft_mode_server, root_path, (void *)(&(p_ft_s->kermit_handler_s)));
+  err_code = (uint32_t)FT_init(ft_mode_server, file_transfer_path, (void *)(&(p_ft_s->kermit_handler_s)));
   if (err_code != FT_SUCCESS)
   {
     printf("file_transfer_init init err_code %u.", err_code);
