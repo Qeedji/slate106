@@ -121,7 +121,7 @@ The configuration of the SLATE106 must respect:
 * WPAN1 authentication method to none
 * Picture Filename: hub.pkk
 
-If you want to be sure that you have the right configuration, you can use the configuration file <em>APPLI.CFG</em> in <em>slate106_config</em> folder.
+If you want to be sure that you have the right configuration, you can use the configuration file <em>APPLI.CFG</em> in <em>bin/slate106_config</em> folder.
 
 ## Remarks
 
